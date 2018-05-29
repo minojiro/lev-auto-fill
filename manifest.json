@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "レバテック作業報告書自動入力",
+  "version": "1.0",
+  "description": "レバテックの作業報告書作成・編集画面で自動入力フォームを表示することができます。毎月入力する手間が、少しだけ楽になります。開発元は、レバレジーズ社とは一切関係ありません。",
+  "icons": {
+    "16": "icons/icon.png",
+    "48": "icons/icon@3x.png",
+    "128": "icons/icon@8x.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://platform.levtech.jp/p/workreport/input/*"],
+      "js": ["jquery-1.12.4.min.js", "app.js"]
+    }
+  ]
+}
